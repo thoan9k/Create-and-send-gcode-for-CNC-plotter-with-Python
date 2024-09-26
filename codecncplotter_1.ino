@@ -1,4 +1,4 @@
-/* Đã thay đổi
+/* 
  Mini CNC Plotter firmware, based in TinyCNC https://github.com/MakerBlock/TinyCNC-Sketches
  Send GCODE to this Sketch using gctrl.pde https://github.com/damellis/gctrl
  Convert SVG to GCODE with MakerBot Unicorn plugin for Inkscape available here https://github.com/martymcguire/inkscape-unicorn
@@ -66,7 +66,7 @@ struct point currentPos;  // vị trí hiện tại của đầu bút
 #define M_ONE32 32
 
 #define STEPPER_MODE M_ONE16
-float StepsPerMillimeterX = 200 * M_ONE32 / 42;       // chế độ 1/16 step-microstep resolution
+float StepsPerMillimeterX = 200 * M_ONE32 / 42;       // chế độ 1/32 step-microstep resolution
 float StepsPerMillimeterY = 200 * STEPPER_MODE / 42;  // chế độ 1/16 step-microstep resolution
 
 //  Drawing settings, should be OK
@@ -308,6 +308,12 @@ void drawLine(float x1, float y1) {
     Serial.println("");
   }
 
+  // phần này để phục vụ thử chạy từng bước
+  if (!mode_abs) {
+    Xmin=Ymin=-50; // để test chạy thử trên gctrl.pde
+  }
+  else Xmin=Ymin=0;
+  
   //  Bring instructions within limits
   if (x1 >= Xmax) {
     x1 = Xmax;
@@ -563,18 +569,6 @@ void arc(float cx, float cy, float x, float y, float dir) {
     currentPos.y = 0;
   }
 }
-// float parseNumber(char code, float val) {                                  // val là giá trị mặc định
-//   char* ptr = line;                                                        // start at the beginning of buffer
-//   while ((long)ptr > 1 && (*ptr) && (long)ptr < (long)line + lineIndex) {  // walk to the end
-//     if (*ptr == code) {                                                    // if you find code on your walk,
-//       return atof(ptr + 1);                                                // convert the digits that follow into a float and return it
-//     }
-//     ptr = strchr(ptr, ' ') + 1;  // take a step from here to the letter after the next space
-//   }
-//   return val;  // end reached, nothing found, return default val.
-// }
-
-
 void processIncomingLine(char* line, int charNB) {  // charNB là số ký tự hay số phần tử trong mảng line
   int currentIndex = 0;
   char buffer[64];  // Hope that 64 is enough for 1 parameter
