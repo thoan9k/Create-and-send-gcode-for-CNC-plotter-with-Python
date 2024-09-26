@@ -1,4 +1,4 @@
-/* 
+/* Đã thay đổi
  Mini CNC Plotter firmware, based in TinyCNC https://github.com/MakerBlock/TinyCNC-Sketches
  Send GCODE to this Sketch using gctrl.pde https://github.com/damellis/gctrl
  Convert SVG to GCODE with MakerBot Unicorn plugin for Inkscape available here https://github.com/martymcguire/inkscape-unicorn
