@@ -11,12 +11,13 @@
 - opencv-python
 - matplotlib
 ## Main feature
-- '2Dplottercontroller.ino': be uploaded on arduino board, It reads data on the serial port, recognizes the format and processes it. It can understand what it has to do next. It then controls actuators like motors and responds by sending a message: "ok" on the serial port when it is done a instruction line.
-- 'Gcode_sender.py': Gcode needs to be sent to microcontroller board, this is where it is done. It was designed to have the interface that help you operate easily. it's function is to send a line of gcode every time the microcontroller responds, wait and process responses on keyboard like: pause, stop, up, down, move, test, adjust pen's height,...
-- 'Process_image_create_and_send_gcode.py': this code is used to create gcode from image, you can create or choose a available gcode to draw
+- **2Dplottercontroller.ino**: be uploaded on arduino board, It reads data on the serial port, recognizes the format and processes it. It can understand what it has to do next. It then controls actuators like motors and responds by sending a message: "ok" on the serial port when it is done a instruction line.
+- **Gcode_sender.py**: Gcode needs to be sent to microcontroller board, this is where it is done. It was designed to have the interface that help you operate easily. it's function is to send a line of gcode every time the microcontroller responds, wait and process responses on keyboard like: pause, stop, up, down, move, test, adjust pen's height,...
+- **Process_image_create_and_send_gcode.py**: this code is used to create gcode from image, you can create or choose a available gcode to draw
 ## Reference
-[https://github.com/MarginallyClever/GcodeCNCDemo]
-[uses Bresenham's line algorithm to draw lines and arcs][1]
-[Gctrl - GUI (Graphical User Interface) program for grbl][2]
-[1]:<https://www.marginallyclever.com/2013/08/how-to-build-an-2-axis-arduino-cnc-gcode-interpreter/>
-[2]:<https://github.com/damellis/gctrl>
+- https://github.com/MarginallyClever/GcodeCNCDemo
+- [uses Bresenham's line algorithm to draw lines and arcs][1]
+- [Gctrl - GUI (Graphical User Interface) program for grbl](https://github.com/damellis/gctrl)
+  
+[1]: https://www.marginallyclever.com/2013/08/how-to-build-an-2-axis-arduino-cnc-gcode-interpreter/
+
