@@ -20,4 +20,6 @@
 - [Gctrl - GUI (Graphical User Interface) program for grbl](https://github.com/damellis/gctrl)
   
 [1]: https://www.marginallyclever.com/2013/08/how-to-build-an-2-axis-arduino-cnc-gcode-interpreter/
+## Model
+![3D model](cncplotter_3dmodel.png)
 
