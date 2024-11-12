@@ -21,6 +21,7 @@
   
 [1]: https://www.marginallyclever.com/2013/08/how-to-build-an-2-axis-arduino-cnc-gcode-interpreter/
 ## Model
-![3D model](cncplotter_3dmodel.png) ![3D model](cncplotter_3dmodel2.png) 
+|![3D model](cncplotter_3dmodel.png) | ![3D model](cncplotter_3dmodel2.png)  |
+|----------------------------|----------------------------|
 ![3D model](image.png) 
 
