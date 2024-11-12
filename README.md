@@ -15,7 +15,7 @@
 - **Gcode_sender.py**: Gcode needs to be sent to microcontroller board, this is where it is done. It was designed to have the interface that help you operate easily. it's function is to send a line of gcode every time the microcontroller responds, wait and process responses on keyboard like: pause, stop, up, down, move, test, adjust pen's height,...
 - **Process_image_create_and_send_gcode.py**: this code is used to create gcode from image, you can create or choose a available gcode to draw
 - **Simple and easy-to-use interface**
-![interface](interface.png)
+- ![interface](interface.png)
 ## Reference
 - https://github.com/MarginallyClever/GcodeCNCDemo
 - [uses Bresenham's line algorithm to draw lines and arcs][1]
@@ -27,6 +27,6 @@
 |----------------------------|----------------------------|
 ![3D model](image.png) 
 ## Result 
-|![girl](picture_girl.png) | ![child](picture_child.png)  |
+|![girl](picture_girl.jpg.png) | ![child](picture_child.jpg)  |
 |----------------------------|----------------------------|
 
