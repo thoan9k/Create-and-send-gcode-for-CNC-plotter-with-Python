@@ -1,4 +1,9 @@
 # Create-and-send-gcode-for-CNC-plotter-with-Python
+## VIDEO
+
+[![link youtube](https://img.youtube.com/vi/Z3GH2jnzsJI/sddefault.jpg)](https://youtu.be/Z3GH2jnzsJI)
+[![link youtube](https://img.youtube.com/vi/KwfJHFADAUQ/sddefault.jpg)](https://youtu.be/KwfJHFADAUQ)
+
 **This source can be useful for you who would like to self study and approach this CNC technology first time**
 ---
 1. Learn to understand how to operate and control the stepper motor and a little about the hardware involved
@@ -29,5 +34,4 @@
 ## Result 
 |![girl](picture_girl.jpg.png) | ![child](picture_child.jpg)  |
 |----------------------------|----------------------------|
-**VIDEO** 
-[![link youtube](https://img.youtube.com/vi/Z3GH2jnzsJI/sddefault.jpg)](https://youtu.be/Z3GH2jnzsJI)
+
