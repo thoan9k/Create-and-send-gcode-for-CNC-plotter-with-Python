@@ -30,5 +30,4 @@
 |![girl](picture_girl.jpg.png) | ![child](picture_child.jpg)  |
 |----------------------------|----------------------------|
 **VIDEO** 
-
-[![Mô tả Video](https://img.youtube.com/vi/Z3GH2jnzsJI/maxresdefault.jpg)](https://youtu.be/Z3GH2jnzsJI)
+[![link youtube](https://img.youtube.com/vi/Z3GH2jnzsJI/sddefault.jpg)](https://youtu.be/Z3GH2jnzsJI)
